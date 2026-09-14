@@ -1,0 +1,35 @@
+.juego {
+background: #ffffff;
+border: 1px solid #e3e5ee;
+border-radius: 12px;
+padding: 24px;
+max-width: 420px;
+}
+
+.juego h3 {
+margin-top: 0;
+}
+
+.juego input {
+padding: 8px 10px;
+border: 1px solid #c9cce0;
+border-radius: 8px;
+font-size: 0.95rem;
+margin-right: 8px;
+}
+
+.juego button {
+background: #2451c4;
+color: #ffffff;
+border: none;
+padding: 8px 16px;
+border-radius: 8px;
+font-size: 0.9rem;
+cursor: pointer;
+}
+
+.juego button:disabled {
+background: #b9bfd6;
+cursor: not-allowed;
+}
+
