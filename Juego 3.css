@@ -1,0 +1,50 @@
+.tablero {
+display: grid;
+grid-template-columns: repeat(4, 70px);
+gap: 10px;
+margin: 16px 0;
+}
+
+.carta {
+width: 70px;
+height: 70px;
+perspective: 600px;
+cursor: pointer;
+}
+
+.carta-interior {
+position: relative;
+width: 100%;
+height: 100%;
+transition: transform 0.4s;
+transform-style: preserve-3d;
+}
+
+.carta.volteada .carta-interior {
+transform: rotateY(180deg);
+}
+
+.carta-cara {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.carta-frente {
+background: #4a3fcf;
+}
+
+.carta-reverso {
+background: #ffffff;
+border: 2px solid #d8dae8;
+transform: rotateY(180deg);
+}
+.carta.emparejada .carta-reverso {
+background: #d9f0e3;
+border-color: #17a673;
+}
