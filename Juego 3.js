@@ -1,4 +1,4 @@
-const SIMBOLOS = ["circulo", "cuadrado", "triangulo", "estrella"];
+const SIMBOLOS = ["circulo", "cuadrado", "triangulo", "estrella", "rombo","hexagono"];
 
 let mazo = [];
 let cartasVolteadas = [];
@@ -29,7 +29,9 @@ function crearSvgSimbolo(simbolo) {
     circulo: `<svg viewBox="0 0 40 40" width="34" height="34"><circle cx="20" cy="20" r="14" fill="#2451c4"/></svg>`,
     cuadrado: `<svg viewBox="0 0 40 40" width="34" height="34"><rect x="7" y="7" width="26" height="26" fill="#17a673"/></svg>`,
     triangulo: `<svg viewBox="0 0 40 40" width="34" height="34"><polygon points="20,6 34,34 6,34" fill="#d9782d"/></svg>`,
-    estrella: `<svg viewBox="0 0 40 40" width="34" height="34"><polygon points="20,4 24,16 37,16 26,24 30,36 20,28 10,36 14,24 3,16 16,16" fill="#d1435b"/></svg>`
+    estrella: `<svg viewBox="0 0 40 40" width="34" height="34"><polygon points="20,4 24,16 37,16 26,24 30,36 20,28 10,36 14,24 3,16 16,16" fill="#d1435b"/></svg>`,
+    rombo: `<svg viewBox="0 0 40 40" width="34" height="34"><polygon points="20,4 36,20 20,36 4,20" fill="#38bdf8"/></svg>`,
+    hexagono: `<svg viewBox="0 0 40 40" width="34" height="34"><polygon points="20,4 34,12 34,28 20,36 6,28 6,12" fill="#a855f7"/></svg>`
   };
   return svgs[simbolo] || "";
 }
